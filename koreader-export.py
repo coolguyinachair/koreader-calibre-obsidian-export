@@ -103,7 +103,7 @@ def main():
             # format contents
             md_file.write(f'# {bookname}\n\n')
             for chapter, chapter_annotations in annotations_by_chapters.items():
-                md_file.write(f'## {chapter}\n\n')
+                md_file.write(f'### {chapter}\n\n')
                 for highlighted_text, notes in chapter_annotations:
                     md_file.write(f'{highlighted_text}{notes}\n\n')
 
